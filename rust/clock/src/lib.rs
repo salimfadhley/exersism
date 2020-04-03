@@ -1,30 +1,12 @@
 use std::fmt;
 use std::fmt::Debug;
 
-pub fn modulo(lhs: i32, rhs: i32) -> i32 {
-    let r = lhs % rhs;
-    match r {
-        x if x == 0 => 0,
-        x if x >= 0 => r,
-        x => x + rhs,
-    }
-}
-
-pub fn extract_remainder(n: i32, b: i32) -> (i32, i32) {
-    let d: f64 = (n as f64) / (b as f64);
-    let r: i32 = d.floor() as i32;
-    let nn: i32 = modulo(n, b);
-    (r, nn)
-}
-
-pub fn normal_time(h: i32, m: i32) -> (i32, i32) {
-    let t0 = extract_remainder(m, 60);
-    let t1 = extract_remainder(h + t0.0, 24);
-    (t1.1, t0.1)
+pub fn minutes_to_hours_and_minutes(mm:i32) -> (i32,i32) {
+    let hours: i32 = mm.div_euclid(mm / 60);
+    let minutes: i32 =
 }
 
 pub struct Clock {
-    hours: i32,
     minutes: i32,
 }
 
@@ -50,15 +32,14 @@ impl Debug for Clock {
 
 impl Clock {
     pub fn new(hours: i32, minutes: i32) -> Self {
-        Clock { hours, minutes }
+        Clock { minutes:(hours * 60) + minutes }
     }
 
     pub fn add_minutes(&self, minutes: i32) -> Self {
-        let new_time = normal_time(self.hours, self.minutes + minutes);
+        let new_time =
 
         Clock {
-            hours: new_time.0,
-            minutes: new_time.1,
+            minutes: self.minutes + minutes;
         }
     }
 }

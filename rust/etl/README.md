@@ -1,45 +1,50 @@
-# DOT DSL
+# ETL
 
-A [Domain Specific Language
-(DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) is a
-small language optimized for a specific domain. Since a DSL is
-targeted, it can greatly impact productivity/understanding by allowing the
-writer to declare *what* they want rather than *how*.
+We are going to do the `Transform` step of an Extract-Transform-Load.
 
-One problem area where they are applied are complex customizations/configurations.
+### ETL
 
-For example the [DOT language](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) allows
-you to write a textual description of a graph which is then transformed into a picture by one of
-the [Graphviz](http://graphviz.org/) tools (such as `dot`). A simple graph looks like this:
+Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
+we're going to migrate this."
 
-    graph {
-        graph [bgcolor="yellow"]
-        a [color="red"]
-        b [color="blue"]
-        a -- b [color="green"]
-    }
+(Typically, this is followed by, "We're only going to need to run this
+once." That's then typically followed by much forehead slapping and
+moaning about how stupid we could possibly be.)
 
-Putting this in a file `example.dot` and running `dot example.dot -T png
--o example.png` creates an image `example.png` with red and blue circle
-connected by a green line on a yellow background.
+### The goal
 
-Write a Domain Specific Language similar to the Graphviz dot language.
+We're going to extract some Scrabble scores from a legacy system.
 
-Our DSL is similar to the Graphviz dot language in that our DSL will be used
-to create graph data structures. However, unlike the DOT Language, our DSL will
-be an internal DSL for use only in our language.
+The old system stored a list of letters per score:
 
-More information about the difference between internal and external DSLs can be
-found [here](https://martinfowler.com/bliki/DomainSpecificLanguage.html).
+- 1 point: "A", "E", "I", "O", "U", "L", "N", "R", "S", "T",
+- 2 points: "D", "G",
+- 3 points: "B", "C", "M", "P",
+- 4 points: "F", "H", "V", "W", "Y",
+- 5 points: "K",
+- 8 points: "J", "X",
+- 10 points: "Q", "Z",
 
-## Builder pattern
+The shiny new Scrabble system instead stores the score per letter, which
+makes it much faster and easier to calculate the score for a word. It
+also stores the letters in lower-case regardless of the case of the
+input letters:
 
-This exercise expects you to build several structs using `builder pattern`.
-In short, this pattern allows you to split the construction function of your struct, that contains a lot of arguments, into 
-several separate functions. This approach gives you the means to make compact but highly-flexible struct construction and
-configuration.
-You can read more about it on the [following page](https://doc.rust-lang.org/1.0.0/style/ownership/builders.html).
+- "a" is worth 1 point.
+- "b" is worth 3 points.
+- "c" is worth 3 points.
+- "d" is worth 2 points.
+- Etc.
 
+Your mission, should you choose to accept it, is to transform the legacy data
+format to the shiny new format.
+
+### Notes
+
+A final note about scoring, Scrabble is played around the world in a
+variety of languages, each with its own unique scoring table. For
+example, an "E" is scored at 2 in the Māori-language version of the
+game while being scored at 4 in the Hawaiian-language version.
 
 ## Rust Installation
 
@@ -116,7 +121,7 @@ If you want to know more about Exercism, take a look at the [contribution guide]
 
 ## Source
 
-Wikipedia [https://en.wikipedia.org/wiki/DOT_(graph_description_language)](https://en.wikipedia.org/wiki/DOT_(graph_description_language))
+The Jumpstart Lab team [http://jumpstartlab.com](http://jumpstartlab.com)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
