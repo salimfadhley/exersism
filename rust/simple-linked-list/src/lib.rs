@@ -8,7 +8,9 @@ pub struct SimpleLinkedList<T> {
 
 impl<T> SimpleLinkedList<T> {
     pub fn new() -> Self {
-        unimplemented!()
+        SimpleLinkedList<T> {
+
+        }
     }
 
     pub fn len(&self) -> usize {

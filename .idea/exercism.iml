@@ -34,14 +34,22 @@
       <sourceFolder url="file://$MODULE_DIR$/rust/nucleotide-count/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust/nucleotide-count/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/rust/nucleotide-count/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/simple-linked-list/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/simple-linked-list/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/simple-linked-list/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/simple-linked-list/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/leap/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/leap/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/rust/clock/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/difference-of-squares/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/dot-dsl/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/etl/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/hello-world/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/leap/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/nucleotide-count/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/reverse-string/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/rna-transcription/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/simple-linked-list/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
