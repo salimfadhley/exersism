@@ -1,42 +1,86 @@
 use std::iter::FromIterator;
 
+#[derive(Default)]
 pub struct SimpleLinkedList<T> {
-    // Delete this field
-    // dummy is needed to avoid unused parameter error during compilation
-    dummy: ::std::marker::PhantomData<T>,
+    head: Option<Box<Node<T>>>,
+}
+
+#[derive(Default)]
+struct Node<T> {
+    data: T,
+    next: Option<Box<Node<T>>>,
+}
+
+impl<T> Node<T> {
+    pub fn new(data: T, next: Option<Box<Node<T>>>) -> Self {
+        Node { data, next }
+    }
 }
 
 impl<T> SimpleLinkedList<T> {
     pub fn new() -> Self {
-        SimpleLinkedList<T> {
-
-        }
+        SimpleLinkedList { head: None }
     }
 
     pub fn len(&self) -> usize {
-        unimplemented!()
+        let mut length: usize = 0;
+        let mut n = &self.head;
+
+        while n.is_some() {
+            length += 1;
+            n = &n.as_ref().unwrap().next
+        }
+
+        length
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.head.is_none()
     }
 
     pub fn push(&mut self, _element: T) {
-        unimplemented!()
+        let head = self.head.take();
+        self.head.replace(Box::new(Node::new(_element, head)));
     }
 
     pub fn pop(&mut self) -> Option<T> {
-        unimplemented!()
+        let head = self.head.take();
+
+        match head {
+            Some(x) => {
+                self.head = x.next;
+                Some(x.data)
+            }
+            None => None,
+        }
     }
 
     pub fn peek(&self) -> Option<&T> {
-        unimplemented!()
+
+        match &self.head {
+            Some(x) => Some(&x.data),
+            None => None
+        }
     }
 
     pub fn rev(self) -> SimpleLinkedList<T> {
-        unimplemented!()
+        let mut oldll: SimpleLinkedList<T> = self;
+        let mut newll: SimpleLinkedList<T> = SimpleLinkedList::new();
+
+
+        while oldll.head.is_some() {
+            newll.push(oldll.pop().unwrap());
+        }
+
+        newll
     }
 }
 
 impl<T> FromIterator<T> for SimpleLinkedList<T> {
     fn from_iter<I: IntoIterator<Item = T>>(_iter: I) -> Self {
-        unimplemented!()
+        let mut ll = SimpleLinkedList::new();
+        _iter.into_iter().for_each(|x|ll.push(x));
+        ll
     }
 }
 
@@ -53,6 +97,13 @@ impl<T> FromIterator<T> for SimpleLinkedList<T> {
 
 impl<T> Into<Vec<T>> for SimpleLinkedList<T> {
     fn into(self) -> Vec<T> {
-        unimplemented!()
+        let mut my:SimpleLinkedList<T> = self.rev();
+        let mut v: Vec<T> = vec![];
+
+        while my.head.is_some() {
+            v.push(my.pop().unwrap());
+        }
+        v
+
     }
 }

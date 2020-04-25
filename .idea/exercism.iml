@@ -40,6 +40,15 @@
       <sourceFolder url="file://$MODULE_DIR$/rust/simple-linked-list/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/rust/leap/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust/leap/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/leap/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/leap/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/pascals-triangle/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/pascals-triangle/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/clock/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/difference-of-squares/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/dot-dsl/target" />
@@ -47,6 +56,7 @@
       <excludeFolder url="file://$MODULE_DIR$/rust/hello-world/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/leap/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/nucleotide-count/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/pascals-triangle/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/reverse-string/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/rna-transcription/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/simple-linked-list/target" />
