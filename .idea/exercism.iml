@@ -48,6 +48,8 @@
       <sourceFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/benches" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/rust/pascals-triangle/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust/pascals-triangle/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/scala/hamming/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scala/hamming/src/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/rust/armstrong-numbers/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/clock/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust/difference-of-squares/target" />
@@ -63,5 +65,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.12.8" level="application" />
   </component>
 </module>

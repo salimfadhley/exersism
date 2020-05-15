@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b076b051-f524-4f44-b7ac-e510e6c85514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_12_1_0_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_12_1_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scalactic_scalactic_2_12_3_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/libraries/sbt__org_scalatest_scalatest_2_12_3_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/modules/hamming-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/modules/hamming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/modules/hamming_5604-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hamming/project/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.exercism/metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Matrix.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/MatrixTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/exercism.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/exercism.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hamming/src/main/scala/Hamming.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hamming/src/main/scala/Hamming.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hamming/src/test/scala/HammingTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../hamming/src/test/scala/HammingTest.scala" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1bwvqTk57QiXebIgOb1zvbQ8bgi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b076b051-f524-4f44-b7ac-e510e6c85514" name="Default Changelist" comment="" />
+      <created>1589556160020</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589556160020</updated>
+      <workItem from="1589556161632" duration="23000" />
+    </task>
+    <servers />
+  </component>
+</project>
