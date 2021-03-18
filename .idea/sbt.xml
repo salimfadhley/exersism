@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="/usr/lib/jvm/java-14-openjdk-amd64" />
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/scala/flatten-array" />
+        <option name="resolveSbtClassifiers" value="true" />
+        <option name="sbtVersion" value="1.0.3" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>
